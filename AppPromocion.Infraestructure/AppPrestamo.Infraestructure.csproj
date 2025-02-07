@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Repository\HistorialRepo\**" />
+    <Compile Remove="Repository\Multiplicador\**" />
+    <Compile Remove="Repository\RankingRepo\**" />
+    <Compile Remove="Repository\Segmento\**" />
+    <Compile Remove="Service\**" />
+    <EmbeddedResource Remove="Repository\HistorialRepo\**" />
+    <EmbeddedResource Remove="Repository\Multiplicador\**" />
+    <EmbeddedResource Remove="Repository\RankingRepo\**" />
+    <EmbeddedResource Remove="Repository\Segmento\**" />
+    <EmbeddedResource Remove="Service\**" />
+    <None Remove="Repository\HistorialRepo\**" />
+    <None Remove="Repository\Multiplicador\**" />
+    <None Remove="Repository\RankingRepo\**" />
+    <None Remove="Repository\Segmento\**" />
+    <None Remove="Service\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppPromocion.Application\AppPrestamo.Application.csproj" />
+  </ItemGroup>
+
+</Project>

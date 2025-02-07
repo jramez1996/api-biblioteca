@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\Persistencia\Multiplicador\**" />
+    <Compile Remove="Contracts\Persistencia\Ranking\**" />
+    <Compile Remove="Handlers\Avances\**" />
+    <Compile Remove="Handlers\Historial\**" />
+    <Compile Remove="Handlers\Informacion\**" />
+    <Compile Remove="Handlers\Promocion\**" />
+    <Compile Remove="Handlers\Ranking\**" />
+    <Compile Remove="Handlers\Resultado\**" />
+    <EmbeddedResource Remove="Contracts\Persistencia\Multiplicador\**" />
+    <EmbeddedResource Remove="Contracts\Persistencia\Ranking\**" />
+    <EmbeddedResource Remove="Handlers\Avances\**" />
+    <EmbeddedResource Remove="Handlers\Historial\**" />
+    <EmbeddedResource Remove="Handlers\Informacion\**" />
+    <EmbeddedResource Remove="Handlers\Promocion\**" />
+    <EmbeddedResource Remove="Handlers\Ranking\**" />
+    <EmbeddedResource Remove="Handlers\Resultado\**" />
+    <None Remove="Contracts\Persistencia\Multiplicador\**" />
+    <None Remove="Contracts\Persistencia\Ranking\**" />
+    <None Remove="Handlers\Avances\**" />
+    <None Remove="Handlers\Historial\**" />
+    <None Remove="Handlers\Informacion\**" />
+    <None Remove="Handlers\Promocion\**" />
+    <None Remove="Handlers\Ranking\**" />
+    <None Remove="Handlers\Resultado\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\Infrastructure\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppPromocion.Domain\AppPrestamo.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
